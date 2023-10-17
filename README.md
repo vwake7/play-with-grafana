@@ -2,7 +2,7 @@
 
 ## Steps to create a Nodegraph panel to represent parent child-relationships, hierarchial relationships
 
-## 1. Create a Docker image for Postgres
+### 1. Create a Docker image for Postgres
       sudo docker run --rm --name some-postgres --network="host" -e POSTGRES_USER=cdbuser -e POSTGRES_PASSWORD=postgres -d postgres
    
 ## 2. Create a Docker image for Grafana
