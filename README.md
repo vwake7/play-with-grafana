@@ -15,4 +15,8 @@
 ### 5. Create a new Panel and select Node Graph as the Visualization
 
 ### 6. Paste 'Select * from edge;' in the Code Panel
+
+### 7. Browse the Grafana url - localhost:3000
+![Screenshot from 2023-10-17 11-02-32](https://github.com/vwake7/play-with-grafana/assets/67334021/96d6c568-de4f-497e-a98c-7662bf07d8c4)
+
    
