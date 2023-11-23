@@ -9,8 +9,16 @@
 
 ### 4. Connect to Postgres DB using the Data Sources in Grafana 
 
-### 5. Create a new Panel and select Node Graph as the Visualization
+### 5. Browse the Grafana url - localhost:3000
 
-### 6. Paste 'Select * from edge;' in the Code Panel
+### 6. Create a new Panel and select Bar Chart as the Visualization
 
-### 7. Browse the Grafana url - localhost:3000
+### 7. Paste below sql in the Code Panel
+SELECT *
+FROM organization.crosstab(
+ 'SELECT Year::text, city, rainfall_in_inch from public.rainfall order by 1,2 ' 
+ ) AS ("Year" text, "Bangalore" int, 
+ "Chennai" int, "Hyderabad" int, "Delhi" int, 
+ "Kolkata" int, "Mumbai" int);
+
+### 8. You will see the bar chart, if you want it stacked, choose 'Stacking' as Normal
