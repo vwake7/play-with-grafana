@@ -1,10 +1,10 @@
 # Steps to create a Bar Chart in Grafana
 
 ### 1. Create a Docker image for Postgres
-      sudo docker run --rm --name some-postgres --network="host" -e POSTGRES_USER=cdbuser -e POSTGRES_PASSWORD=postgres -d postgres
+      sudo docker run --rm --name some-postgres  -e POSTGRES_USER=cdbuser -e POSTGRES_PASSWORD=postgres -d postgres
    
 ### 2. Create a Docker image for Grafana
-      sudo docker run -d --rm --name some-grafana -p 3001:3000 --network="host" grafana/grafana
+      sudo docker run -d --rm --name some-grafana --network="host" grafana/grafana
 ### 3. Download the sql from bar-chart.sql and execute in your Postgres db
 
 ### 4. Connect to Postgres DB using the Data Sources in Grafana 
