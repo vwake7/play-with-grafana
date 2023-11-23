@@ -22,3 +22,4 @@ FROM organization.crosstab(
  "Kolkata" int, "Mumbai" int);
 
 ### 8. You will see the bar chart, if you want it stacked, choose 'Stacking' as Normal
+![Screenshot from 2023-11-23 10-30-34](https://github.com/vwake7/play-with-grafana/assets/67334021/28b7b647-c735-4ba6-a91b-6c6957530475)
